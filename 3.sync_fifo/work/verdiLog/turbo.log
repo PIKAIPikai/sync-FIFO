@@ -1,0 +1,3 @@
+Command Line: /opt/Synopsys/verdi/T-2022.06-SP2/platform/LINUXAMD64/bin/Novas -f ../script/filelist.f -ssf sync_fifo.fsdb
+uname(Linux CentosPublic 3.10.0-957.el7.x86_64 #1 SMP Thu Nov 8 23:39:32 UTC 2018 x86_64)
+au time 1248.638386 22.491428 11.432088 delta 316301312 316301312 total 864956416 864956416

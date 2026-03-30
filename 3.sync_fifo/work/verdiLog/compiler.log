@@ -1,0 +1,11 @@
+*design* DebussyLib (btIdent Verdi_T-2022.06-SP2)
+Command arguments:
+    +define+verilog
+    -f ../script/filelist.f
+        ../bench/tb_sync_fifo.v
+        ../rtl/sync_fifo.v
+
+Highest level modules:
+tb_sync_fifo
+
+Total	0 error(s),   0 warning(s)

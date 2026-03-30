@@ -1,0 +1,19 @@
+debImport "-f" "../script/filelist.f"
+wvCreateWindow
+wvOpenFile -win $_nWave2 {/home/user/Desktop/pk/3.sync_fifo/work/*.fsdb}
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiSetActWin -win $_nWave2
+srcSelect -signal "clk" -line 8 -pos 1 -win $_nTrace1
+srcSelect -signal "rst_n" -line 9 -pos 1 -win $_nTrace1
+srcSelect -signal "wren" -line 11 -pos 1 -win $_nTrace1
+srcSelect -signal "wdata" -line 12 -pos 1 -win $_nTrace1
+srcSelect -signal "rden" -line 14 -pos 1 -win $_nTrace1
+srcSelect -signal "rdata" -line 15 -pos 1 -win $_nTrace1
+srcSelect -signal "full" -line 17 -pos 1 -win $_nTrace1
+srcSelect -signal "empty" -line 18 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "sync_fifo.clogb2" -win $_nTrace1
+srcSetScope "sync_fifo.clogb2" -delim "." -win $_nTrace1
+srcHBSelect "sync_fifo.clogb2" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+debExit
